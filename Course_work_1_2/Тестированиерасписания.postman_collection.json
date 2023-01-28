@@ -1,0 +1,1061 @@
+{
+	"info": {
+		"_postman_id": "8b06923e-fae7-4374-87a3-41a23bf29067",
+		"name": "Тестирование расписания",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20717371"
+	},
+	"item": [
+		{
+			"name": "Поле \"Название\"",
+			"item": [
+				{
+					"name": "создание новой записи",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#F9EBFF\",\n    \"color\": \"#D478F1\",\n    \"description\": \"New_description\",\n    \"title\": \"NEW EVENT\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/createPersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"createPersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Кирилица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"Мама мыла раму\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Латиница",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"People, i come in peace\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Цифры.",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"123456456789\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Спецсимволы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"?№*/&^\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Иные алфавиты и иероглифы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"คนฉันมาอยู่ในความสงบ\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пустое поле",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Текст 40 символов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"1234567890йцукенгшщзqwertyuiop1234567890\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " Текст более 40 символов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\":\"234567890qwertyuiopйцукенгшщз12345678901234567890qwertyuiopйцукенгшщз1234567890\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Эмодзи",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"Белеет парус одинокий\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Поле \"Описание\"",
+			"item": [
+				{
+					"name": "Латиница",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"The Earth before the beginning of time\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Числа",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"1234567890\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Другие алфавиты и иероглифы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"時の始まりの前の地球\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пустое поле",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ссылки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Поле \"Дата\"",
+			"item": [
+				{
+					"name": "Дата на месяц вперед от текущей",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-07-15T14:00:00+03:00\",\n    \"endAt\": \"2022-07-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}"
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата на месяц назад от текущей ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-05-15T14:00:00+03:00\",\n    \"endAt\": \"2022-05-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Поле \"Время\"",
+			"item": [
+				{
+					"name": "Текущее время и дата",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T14:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Самое раннее время начала занятий (00.00)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T00:00:00+03:00\",\n    \"endAt\": \"2022-06-15T14:30:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Самое позднее время начала занятий (23.50)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T23:50:00+03:00\",\n    \"endAt\": \"2022-06-15T00:00:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Время начала совпадает со временем окончания",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#0000FF\",\n    \"color\": \"#8B0000\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T20:00:00+03:00\",\n    \"endAt\": \"2022-06-15T20:00:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Цвет события",
+			"item": [
+				{
+					"name": "Изменение цвета события на \"Gray\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"myid1\"",
+									"var value = pm.response.json().data.payload.id",
+									"pm.collectionVariables.set(key, value)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token_global}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"backgroundColor\": \"#F4F5F6\",\n    \"color\": \"#81888D\",\n    \"description\": \"https://skyeng.ru\",\n    \"title\": \"🚗 🚗 🚗 🚗 🚗\",\n    \"startAt\": \"2022-06-15T00:00:00+03:00\",\n    \"endAt\": \"2022-06-15T23:50:00+03:00\",\n    \"id\": {{myid1}},\n    \"oldStartAt\": \"2022-06-15T14:00:00+03:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/updatePersonal",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"updatePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token_global",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzk2NDU0ODIxNTUiLCJuYW1lIjoiXHUwNDIxXHUwNDQyXHUwNDMwXHUwNDNkXHUwNDM4XHUwNDQxXHUwNDNiXHUwNDMwXHUwNDMyIiwic3VybmFtZSI6Ilx1MDQyMFx1MDQzMFx1MDQzN1x1MDQzMlx1MDQzMFx1MDQzYlx1MDQ0Zlx1MDQzNVx1MDQzMiIsImVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsInVpTGFuZ3VhZ2UiOiJydSIsImxvY2FsZSI6InJ1Iiwic2VydmljZUxvY2FsZSI6bnVsbCwidWFzIjozMCwiand0VHlwZSI6MSwianRpIjoidU5rbnJHZ3dZTTVDNjRDVlh0U3lteGdLT2o3bmJzZTkiLCJicmFuZCI6bnVsbCwiZXhwIjoxNjU1NDgyNTU1LCJhdmF0YXJVcmwiOiJodHRwczpcL1wvYXV0aC1hdmF0YXJzLXNreWVuZy5pbWdpeC5uZXRcLzEwMzM4NzM2XC8xZGQ5MzVhOC1kZjIxLTQ2YzYtYTAzYy0zNWU5MWUxZGVkZWY_YXV0bz1mb3JtYXQlMkNlbmhhbmNlJmZpdD1jcm9wJmg9MjAwJml4bGliPXBocC0yLjEuMSZxPTc1JnNhdD04JnNoYXJwPTEwJnZpYj04Jnc9MjAwIiwiYmlydGhkYXkiOiIxOTcxLTAzLTA1IiwiYVR5cGUiOiJVU0VSTkFNRV9QQVNTV09SRCIsImFUaW1lIjoxNjU0ODgyNTAyLCJyb2xlcyI6WyJST0xFX1RFQUNIRVIiLCJST0xFX0NSTTJfVEVBQ0hFUl9BQ0NFU1MiLCJST0xFX1RUQ19VU0FHRSIsIlJPTEVfVklNQk9YX1RFQUNIRVJfVVNBR0UiLCJST0xFX1ZJTUJPWF9DUkVBVEVfU0NSRUVOSU5HX1RFU1QiXX0.Js21ebduib8zhdmFQzkn531n8deUXPOdh5rMVQKz5AYDiI1SynKKzryDXT8mCdU31Itdw3gMit8suhDcL7-Q6xyt8dOThNMR-TMpB14Do2o_5NwFm_G3NLEE7D3HyLxD5iW_rrSpgBARyDLq-1bb5nEwlZ-H0pDsyQVIuyJert6tVw_yMKlDm3Vs8DiqzheOInRSvMpDAeR-5N6ecFmJnDC513RyGwDUtKr6UW_L7OXmpbn4wp2dOS00nH_mZf57xHm9_v1LDLdfmPY8Vg-SdBGeODIXE4mPRxDjZ9BChhL4-U_LaYv--N1Y7ei024hMl2fynRmGuH3-SWNWnkNSljq8N2cXsw-5XT0Rk9iRWj8spNh02cSM5-V_iaBP3I5TLPeKm0uHz6p1p_tiIKDpQoZS-o2UC1Stu_tNIG5XfynLbAZFxJIXxI09hNAGzt9UWtTULNuGW4G3cx66eXvEx4D_Bc7WW7x7BRQKtGukH09_2SKiL32sxRMVgxUvegvNeLPfJ8zorQLpXW9LI0DsumBWvbscqfZR1B44Ob3yMftyGfFlFrC9Hp5fVkwJ9gFoc2XhFgneuO9ar5aAJtg4JegvTiwQWnX2sXDjK8qlpWtjIhQSBhvtaNhNmEwba5XYIqmCXxWiaU2lPi4YUS-w-4_SLETbujkuhISrdb1Z3WU",
+			"type": "string"
+		},
+		{
+			"key": "myid1",
+			"value": "",
+			"disabled": true
+		},
+		{
+			"key": "myURL",
+			"value": "https://api-teachers.skyeng.ru/v2/schedule",
+			"type": "string"
+		},
+		{
+			"key": "myid1",
+			"value": ""
+		}
+	]
+}
