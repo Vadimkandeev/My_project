@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "917bd3c5-0f57-4743-8763-00657873fd5f",
+		"name": "DiplomCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20717371"
+	},
+	"item": [
+		{
+			"name": "Проверка работы видео в видеокомнате (Pisitive)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://content-vimbox.skyeng.ru/cms/api/video?ids=gwoNqnVXo2DZJton8uSHBQ%3D%3D&Token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg",
+					"protocol": "https",
+					"host": [
+						"content-vimbox",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"cms",
+						"api",
+						"video"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "gwoNqnVXo2DZJton8uSHBQ%3D%3D"
+						},
+						{
+							"key": "Token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отправка запроса с неверным токеном",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dictionary.skyeng.ru/api/for-vimbox/v1/search?text=london&limit=10&Token=ey1goXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg",
+					"protocol": "https",
+					"host": [
+						"dictionary",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"api",
+						"for-vimbox",
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "london"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "Token",
+							"value": "ey1goXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отправка запроса без токена",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dictionary.skyeng.ru/api/for-vimbox/v1/search?text=apple&limit=10",
+					"protocol": "https",
+					"host": [
+						"dictionary",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"api",
+						"for-vimbox",
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "apple"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Результат запроса  видео в видеокомнате без токена",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://content-vimbox.skyeng.ru/cms/api/video?Token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg&ids=gwoNqnVXo2DZJton8uSHBQ%3D%3D",
+					"protocol": "https",
+					"host": [
+						"content-vimbox",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"cms",
+						"api",
+						"video"
+					],
+					"query": [
+						{
+							"key": "Token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg"
+						},
+						{
+							"key": "ids",
+							"value": "gwoNqnVXo2DZJton8uSHBQ%3D%3D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отправка запроса с неверным методом",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dictionary.skyeng.ru/api/for-vimbox/v1/search?text=london&limit=10&Token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg",
+					"protocol": "https",
+					"host": [
+						"dictionary",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"api",
+						"for-vimbox",
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "london"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "Token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEwMzM4NzM2LCJpZGVudGl0eSI6InRlc3QtbW9iaWxlMUBza3llbmcucnUiLCJpZGVudGl0eUxvZ2luIjpudWxsLCJpZGVudGl0eUVtYWlsIjoidGVzdC1tb2JpbGUxQHNreWVuZy5ydSIsImlkZW50aXR5UGhvbmUiOiIrNzkxMjI1MjUyNTIiLCJuYW1lIjoiUmFkMTIiLCJzdXJuYW1lIjoiXHUwNDE4XHUwNDMyXHUwNDMwXHUwNDNkXHUwNDNlXHUwNDMyIiwiZW1haWwiOiJ0ZXN0LW1vYmlsZTFAc2t5ZW5nLnJ1IiwidWlMYW5ndWFnZSI6InJ1IiwibG9jYWxlIjoicnUiLCJzZXJ2aWNlTG9jYWxlIjpudWxsLCJ1YXMiOjMwLCJqd3RUeXBlIjoxLCJqdGkiOiJteGZiR2RsUEhCUTU5cW5OS080dldxQlNERjF6UHM5eiIsImJyYW5kIjpudWxsLCJleHAiOjE2NjM5OTc2NDgsImF2YXRhclVybCI6Imh0dHBzOlwvXC9hdXRoLWF2YXRhcnMtc2t5ZW5nLmltZ2l4Lm5ldFwvMTAzMzg3MzZcL2E0ZjVmMDI3LTcyMTQtNDk3Ni05OWJiLTBmNzQzNmI3MjU0ZD9hdXRvPWZvcm1hdCUyQ2VuaGFuY2UmZml0PWNyb3AmaD0yMDAmaXhsaWI9cGhwLTIuMS4xJnE9NzUmc2F0PTgmc2hhcnA9MTAmdmliPTgmdz0yMDAiLCJiaXJ0aGRheSI6IjE5NzEtMDMtMDUiLCJhVHlwZSI6IlVTRVJOQU1FX1BBU1NXT1JEIiwiYVRpbWUiOjE2NjM1NjczNDQsInJvbGVzIjpbIlJPTEVfVEVBQ0hFUiIsIlJPTEVfQ1JNMl9URUFDSEVSX0FDQ0VTUyIsIlJPTEVfVFRDX1VTQUdFIiwiUk9MRV9WSU1CT1hfVEVBQ0hFUl9VU0FHRSIsIlJPTEVfVklNQk9YX0NSRUFURV9TQ1JFRU5JTkdfVEVTVCJdfQ.2uUlAqIWbdh8wCYkdvqcG2lAJq97psAS17-CVxV5qTHAxnZ6bKSrOpch96n0vJ10XlVznt38NQUeteh0KMa-61lwNKBAPKTfim2Yegu3A0iHB6ZG1YaJVbpV0w-gyaPXhNlGnhQkAMcMQ9YRZluz7Oz_porSFKzLaiJ3hY5KDAIrM8hlUqKUF-je-EH7xC3bkkRQ_8q67Xo2bIcJO_RWJ3JKHGnAp2fnUFlM2cnwDUgAkBHcZCl_ERNyDE41eBhVR8WWWT0GsK2W_gRVgcvIuH4KtkSeLSQPQo1DtXRbMHAMjHiy6nodNqPZ7TGQWLdh_R-p86hPUw5ebFzHRn7xJVQd1Dn7BuQrs1pMU8Ywu_i_Fs5E80bVrPKwAlsMJI5CgUsIUX_mDglTnquPY-gkvjV7Y-awIRTlv8TkeGfRV3-fMejbwk-My3NZEUh9uNlsXGxDgeRPwhbylqwdO5Ote_cYOjSD0SUin3ClPZKhYlKQo4v_eIjl4ymIX3tWOB6ofugO7C4kUh6jypPZ8ciBgUUd2G8k4DD1RlvIOM2OBO2MWySA0EpPH82tkc7_uDKQrPX4mtrAfsJraGTxgVNPOMpgdJoMNKkRQLvAQc30YAkmLxKiZxjZbHHtWpBZaPNHXIyq2mVhpIjl31MbFrTYz91JW4WaVX63_4s1o9kVhYg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отправка запроса \"Get\" с телом запроса",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1929,\n    \"type\": \"\",\n    \"views\": 11543,\n    \"youkuUrl\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dictionary.skyeng.ru/api/for-vimbox/v1/search?text=apple&limit=10",
+					"protocol": "https",
+					"host": [
+						"dictionary",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"api",
+						"for-vimbox",
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "apple"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
